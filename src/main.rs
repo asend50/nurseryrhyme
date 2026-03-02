@@ -28,7 +28,7 @@ fn window_conf() -> Conf {
 #[macroquad::main(window_conf)]
 async fn main() {
 
-    let mut lbl_nursery = Label::new("Hello\nWorld", 100.0, 100.0, 25);
+    let mut lbl_nursery = Label::new("Press a button to display one of the three nursery rhymes!", 100.0, 100.0, 25);
     lbl_nursery
     .with_fixed_size(710.0, 300.0)
     .with_border(BLACK, 5.0);
@@ -71,10 +71,24 @@ async fn main() {
 
         
     );
+
+    let btn_exit = TextButton::new(
+        350.0,
+        500.0,
+        200.0,
+        50.0,
+        "Exit",
+        RED,
+        GREEN,
+        28
+       
+    
+    );
+
     
     loop {
         clear_background(WHITE);
-        draw_grid(50.0, BROWN);
+        
 
         if btn_twinkle.click() {
             lbl_nursery.set_text("Twinkle, twinkle, little star,
@@ -115,6 +129,10 @@ The eager children cry;
 Why, Mary loves the lamb, you know,
 The teacher did reply.");
             
+        }
+
+        if btn_exit.click() {
+            break;
         }
 
 
