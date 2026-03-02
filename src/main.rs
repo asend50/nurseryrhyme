@@ -1,7 +1,7 @@
 /*
-By: <Your Name Here>
+By: <Asen Doiron>
 Date: 2026-03-02
-Program Details: <Program Description Here>
+Program Details: <The purpose of this program is to allow the user to press buttons and switch between three different popular nursery rhymes.>
 */
 
 mod modules;
