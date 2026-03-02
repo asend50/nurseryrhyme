@@ -7,7 +7,6 @@ Program Details: <The purpose of this program is to allow the user to press butt
 mod modules;
 
 use macroquad::prelude::*;
-use crate::modules::grid::draw_grid;
 use crate::modules::label::Label;
 use crate::modules::text_button::TextButton;
 
